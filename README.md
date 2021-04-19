@@ -19,9 +19,10 @@ https://bitnami.com/
 
 2. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
 
-![](https://i.imgur.com/4zThMCF.png)
+![](https://i.imgur.com/eBsdeMY.png)
+*Wordpress Versión 5.7.1*
 
-3. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
+7. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
 
 - SSH (TCP) 22
 - HTTP (TCP) 80
