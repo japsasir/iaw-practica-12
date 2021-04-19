@@ -1,5 +1,5 @@
 # iaw-practica-12
-implantación del sitio WordPress en Amazon Web Services (AWS) usando una AMI (Amazon Machine Image) de Bitnami
+Implantación del sitio WordPress en Amazon Web Services (AWS) usando una AMI (Amazon Machine Image) de Bitnami
 
 > IES Celia Viñas (Almería) - Curso 2020/2021
 Módulo: IAW - Implantación de Aplicaciones Web
