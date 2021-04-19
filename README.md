@@ -13,9 +13,9 @@ https://bitnami.com/
 
 **Tareas a realizar**
 ------------
-1. Crear una máquina virtual en Amazon EC2. RAM mínima 2 GB (La de 1GB puede dar problemas)
+1. Crear una máquina virtual en Amazon EC2. Buscamos una AMI de la comunidad, introducimos 'Bitnami Wordpress' y buscamos la última versión (
 
-![](https://i.imgur.com/YypRCwX.png)
+![](https://i.imgur.com/gU2pzHo.png)
 
 2. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
 
