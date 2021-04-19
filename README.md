@@ -13,14 +13,14 @@ https://bitnami.com/
 
 **Tareas a realizar**
 ------------
-1. Crear una máquina virtual en Amazon EC2. Buscamos una AMI de la comunidad, introducimos 'Bitnami Wordpress' y buscamos la última versión (
+1. Crear una máquina virtual en Amazon EC2. Buscamos una AMI de la comunidad, introducimos 'Bitnami Wordpress' y buscamos la última versión. La versión 'production ready' tiene todo configurado. (Nota: 2 GB o más de RAM, t2.small)
 
 ![](https://i.imgur.com/gU2pzHo.png)
 
 2. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
 
-![](https://i.imgur.com/eBsdeMY.png)
-*Wordpress Versión 5.7.1*
+![](https://i.imgur.com/MyUr7K0.png)
+Nota: Funciona mucho mejor desde la página de bitnami que buscando en las AMI de 'comunidad' de AWS.
 
 7. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
 
