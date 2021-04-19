@@ -13,17 +13,24 @@ https://bitnami.com/
 
 **Tareas a realizar**
 ------------
-1. Crear una máquina virtual en Amazon EC2. RAM mínima 2 GB (No sirve la más económica)
+1. Crear una máquina virtual en Amazon EC2. RAM mínima 2 GB (La de 1GB puede dar problemas)
+
+![](https://i.imgur.com/YypRCwX.png)
 
 2. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
+
+![](https://i.imgur.com/4zThMCF.png)
 
 3. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
 
 - SSH (TCP) 22
 - HTTP (TCP) 80
 - HTTPS (TCP) 443
+![](https://i.imgur.com/qHfsY0y.png)
 
 4. Crear un par de claves (pública y privada) para conectar por SSH con su instancia.
+
+La clave privada es *UbuntuServerjpadilla.pem*
 
 5. Una vez que haya iniciado su instancia, buscar cuál es la contraseña de administración del sitio WordPress.
 
