@@ -38,14 +38,30 @@ La clave privada es *UbuntuServerjpadilla.pem*
 Desde nuestra máquina AWS, podemos comprobarlo en la siguiente ruta:
 `Click derecho sobre la instancia > Monitoreo y solución de problemas > Obtener registros del sistema`
 ![](https://i.imgur.com/McKKozU.png)
+
 6. Buscar la dirección IP pública de su instancia y compruebe que puede acceder a ella desde una navegador web.
+
+![](https://i.imgur.com/rWAJMIH.png)
+Aquí vemos el aspecto que tiene por defecto un sitio web con la AMI de Bitnami
+
+![](https://i.imgur.com/GwbaDE4.png)
+Las credenciales para la consola de administración funcionan. Vemos que trae un plugin, Jetpack, ya instalado.
 
 7. Para poder conectar con phpMyAdmin realizar un túnel SSH desde la máquina a la máquina remota.
 
-((ssh -N -L 8888:127.0.0.1:80 -i clave_aws.pem bitnami@ip_maquina))
+Sintaxis básica
+ssh -N -L 8888:127.0.0.1:80 -i clave_aws.pem bitnami@ip_maquina
+
+Orden usada en el ejemplo
+ssh -N -L 8888:127.0.0.1:80 -i C/:\Users\jpadi\Desktop\UbuntuServerjpadilla.pem bitnami@100.25.34.25/
+
+![](https://i.imgur.com/GOfoYPe.png)
+
 Enlaza el puerto 80 del servidor al puerto 8888 de nuestra máquina y la dirección localhost (127.0.0.1). Accedemos al navegador y escribimos 127.0.0.1:8888 podremos acceder al login de phpMyAdmin de nuestro servidor a través del túnel que hemos creado.
 
-`NOTA: Desglosar las opciones -N -L -i`
+![](https://i.imgur.com/JISVO4K.png)
+Con las credenciales 'root' y la contraseña que antes hemos visto en la consola de monitoreo, podemos acceder al panel de phpMyAdmin. Con esto tenemos pleno control de nuestro sitio Wordpress y la práctica está finalizada.
+
 
 **Archivos en el repositorio**
 ------------
