@@ -36,8 +36,8 @@ La clave privada es *UbuntuServerjpadilla.pem*
 5. Una vez que haya iniciado su instancia, buscar cuál es la contraseña de administración del sitio WordPress.
 
 Desde nuestra máquina AWS, podemos comprobarlo en la siguiente ruta:
-`Acciones > Monitoreo y solución de problemas > Obtener registros del sistema`
-
+`Click derecho sobre la instancia > Monitoreo y solución de problemas > Obtener registros del sistema`
+![](https://i.imgur.com/McKKozU.png)
 6. Buscar la dirección IP pública de su instancia y compruebe que puede acceder a ella desde una navegador web.
 
 7. Para poder conectar con phpMyAdmin realizar un túnel SSH desde la máquina a la máquina remota.
