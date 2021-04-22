@@ -13,33 +13,30 @@ https://bitnami.com/
 
 **Tareas a realizar**
 ------------
-1. Crear una máquina virtual en Amazon EC2. Buscamos una AMI de la comunidad, introducimos 'Bitnami Wordpress' y buscamos la última versión. La versión 'production ready' tiene todo configurado. (Nota: 2 GB o más de RAM, t2.small)
-
-![](https://i.imgur.com/gU2pzHo.png)
-
-2. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
+1. Seleccionar una Community AMI de Bitnami con la última versión de WordPress. https://bitnami.com/stack/wordpress/cloud/aws/amis
+Es necesario tener abierta sesión en bitnami y aws a la vez y se te redirigirá con el código de bitnami.
 
 ![](https://i.imgur.com/MyUr7K0.png)
 Nota: Funciona mucho mejor desde la página de bitnami que buscando en las AMI de 'comunidad' de AWS.
 
-7. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
+2. Configurar los puertos que estarán abiertos para poder conectarnos por SSH y para poder acceder por HTTP/HTTPS.
 
 - SSH (TCP) 22
 - HTTP (TCP) 80
 - HTTPS (TCP) 443
 ![](https://i.imgur.com/qHfsY0y.png)
 
-4. Crear un par de claves (pública y privada) para conectar por SSH con su instancia.
+3. Crear un par de claves (pública y privada) para conectar por SSH con su instancia.
 
 La clave privada es *UbuntuServerjpadilla.pem*
 
-5. Una vez que haya iniciado su instancia, buscar cuál es la contraseña de administración del sitio WordPress.
+4. Una vez que haya iniciado su instancia, buscar cuál es la contraseña de administración del sitio WordPress.
 
 Desde nuestra máquina AWS, podemos comprobarlo en la siguiente ruta:
 `Click derecho sobre la instancia > Monitoreo y solución de problemas > Obtener registros del sistema`
 ![](https://i.imgur.com/McKKozU.png)
 
-6. Buscar la dirección IP pública de su instancia y compruebe que puede acceder a ella desde una navegador web.
+5. Buscar la dirección IP pública de su instancia y compruebe que puede acceder a ella desde una navegador web.
 
 ![](https://i.imgur.com/rWAJMIH.png)
 Aquí vemos el aspecto que tiene por defecto un sitio web con la AMI de Bitnami
@@ -47,7 +44,7 @@ Aquí vemos el aspecto que tiene por defecto un sitio web con la AMI de Bitnami
 ![](https://i.imgur.com/GwbaDE4.png)
 Las credenciales para la consola de administración funcionan. Vemos que trae un plugin, Jetpack, ya instalado.
 
-7. Para poder conectar con phpMyAdmin realizar un túnel SSH desde la máquina a la máquina remota.
+6. Para poder conectar con phpMyAdmin realizar un túnel SSH desde la máquina a la máquina remota.
 
 Sintaxis básica
 ssh -N -L 8888:127.0.0.1:80 -i clave_aws.pem bitnami@ip_maquina
