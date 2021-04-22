@@ -74,6 +74,8 @@ https://bitnami.com/stack/wordpress/cloud/aws/amis
 https://docs.bitnami.com/aws/get-started-console/
 - PhpMyAdmin vía túnel SSH
 https://docs.bitnami.com/aws/faq/get-started/access-phpmyadmin/
+- Explicación comandos automatizada
+https://explainshell.com/explain?cmd=ssh+-N+-L+8080%3A192.168.178.1%3A80+raspberrypi
 
 
 **Editor Markdown**
